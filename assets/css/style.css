@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.3;
+}
+
+body{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 14px;
+    color: #262626;
+}
+
+#container{
+    width: 450px;
+}
+
+.msgList{}
+.msgList li{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #f3eded;
+}
+
+.msgList li.unread{
+    background-color: #f5f5f5;
+}
+
+.msgList li:after,
+.msgList li .listMeta .listHead:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.msgList li .profilePic{
+    float: left;
+    width: 60px;
+}
+.msgList li .profilePic i{
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-color: #f3eded;
+    border-radius: 50%;
+}
+.msgList li .listMeta{
+    float: left;
+    width: calc(100% - 60px);
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.msgList li .listMeta .listHead .userName{
+    font-weight: 700;
+    font-size: 14px;
+    float: left;
+}
+.msgList li .listMeta .listHead .date{
+    font-size: 12px;
+
+    float: right;
+    opacity: .8;
+}
+.msgList li .listMeta .message{
+    font-size: 14px;
+    font-weight: 400;
+    opacity: .8;
+}
+
+.msgListBottom{
+    text-align: center;
+    padding: 10px;
+}
+.msgListBottom span{
+    font-size: 12px;
+}
